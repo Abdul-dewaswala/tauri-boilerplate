@@ -1,5 +1,9 @@
 # Tauri Boilerplate
 
+<p align="center">
+  <img src="./public/tauri-boilerplate.png" width="200" alt="tauri-boilerplate logo" />
+</p>
+
 A modern, production-ready desktop application template built with **Tauri 2 + React 19 + TypeScript + Tailwind CSS 4**.
 
 Perfect for building cross-platform developer tools and utilities with native performance and modern web technologies.
@@ -21,7 +25,7 @@ Perfect for building cross-platform developer tools and utilities with native pe
 |-------|-----------|
 | **Frontend** | React 19 + React Router 7 |
 | **Language** | TypeScript (strict mode) |
-| **Styling** | Tailwind CSS 4 |
+| **Styling** | Tailwind CSS 4 |Tauri Boilerplate
 | **Build** | Vite 7 |
 | **Desktop** | Tauri 2 (Rust backend) |
 | **Icons** | React Icons |

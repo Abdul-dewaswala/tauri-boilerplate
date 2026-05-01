@@ -49,7 +49,7 @@ const AppHeader = ({ onSearchOpen }: AppHeaderProps) => {
     >
       {/* Left - Title */}
       <div className="font-semibold text-sm truncate flex items-center flex-shrink-0 text-slate-100">
-        <img src="/32X32.png" className="h-7 mr-2" alt="logo" />
+        <img src="/tauri-boilerplate.png" className="h-7 mr-2" alt="logo" />
         <span>{appname} v{appversion}</span>
       </div>
 
