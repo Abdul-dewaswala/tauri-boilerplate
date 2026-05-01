@@ -24,7 +24,7 @@ export const menuCategories: MenuCategory[] = [
     category: 'Data & API',
     description: 'Tools for working with data formats',
     icon: FiCode,
-    tools: menuItems.filter(t => t.category === 'Data & API')
+    items: menuItems.filter(t => t.category === 'Data & API')
   },
 ];
 ```

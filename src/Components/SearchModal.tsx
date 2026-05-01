@@ -83,7 +83,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     setSelectedIndex(0);
                   }}
                   onKeyDown={handleKeyDown}
-                  placeholder="Search tools by name, description, or category..."
+                  placeholder="Search routes by name, description, or category..."
                   className="flex-1 bg-transparent outline-none text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400"
                 />
                 {query && (
@@ -134,11 +134,11 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                 </ul>
               ) : query ? (
                 <div className="px-4 py-8 text-center text-slate-500 dark:text-slate-400">
-                  No tools found matching "{query}"
+                  No routes found matching "{query}"
                 </div>
               ) : (
                 <div className="px-4 py-8 text-center text-slate-500 dark:text-slate-400">
-                  Start typing to search for tools...
+                  Start typing to search for routes...
                 </div>
               )}
             </div>

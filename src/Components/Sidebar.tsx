@@ -80,7 +80,7 @@ export default function Sidebar() {
 
                         {expandedCategories === category.category && (
                             <div className="space-y-1 mt-1 pl-2">
-                                {category.tools.map(renderToolItem)}
+                                {category.items.map(renderToolItem)}
                             </div>
                         )}
                     </div>

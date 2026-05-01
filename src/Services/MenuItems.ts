@@ -8,11 +8,11 @@ import { Tool, MenuCategory } from '../types';
 export const menuItems: Tool[] = [
   // Example tool structure:
   // {
-  //   label: 'JSON Formatter',
-  //   secondary: 'Format, validate, and beautify JSON',
-  //   route: 'json-formatter',
-  //   Icon: VscJson,
-  //   category: 'Data & API'
+  //   label: 'Home',
+  //   secondary: 'Home',
+  //   route: '/',
+  //   Icon: FiHome,
+  //   category: 'Home'
   // },
 ];
 
@@ -25,9 +25,15 @@ export const allMenuItems = [
 ];
 
 /**
- * Tools grouped by category for sidebar navigation
+ * Routes grouped by category for sidebar navigation
  */
 export const menuCategories: MenuCategory[] = [
-  // Categories are automatically generated from tools
-  // when tools are added to menuItems
+  // Categories are automatically generated from routes
+  // when routes are added to menuItems
+  // {
+  //   category: 'Home',
+  //   description: 'Home',
+  //   icon: FiHome,
+  //   items: menuItems.filter(t => t.category === 'Home')
+  // }
 ];

@@ -20,7 +20,7 @@ export interface MenuCategory {
   category: string;
   description: string;
   icon: React.ComponentType<any>;
-  tools: Tool[];
+  items: Tool[];
 }
 
 /**
