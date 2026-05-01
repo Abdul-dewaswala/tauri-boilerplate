@@ -1,0 +1,37 @@
+[package]
+name = "tauri-boilerplate"
+version = "0.0.0"
+description = "A modern, production-ready Tauri + React boilerplate with tray support, global shortcuts, startup launch settings, and a clean scalable architecture for building powerful desktop apps."
+authors = ["Abdul Quadir <abduldewaswala@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/Abdul-dewaswala/tauri-boilerplate"
+edition = "2021"
+keywords = []
+categories = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "dev_tools_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-http = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-autostart = "2"
+tauri-plugin-global-shortcut = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri-plugin-dialog = "2.7.0"
+tauri-plugin-fs = "2.5.0"
+reqwest = { version = "0.13.2", features = ["json"] }
+trust-dns-resolver = "0.23"
+sysinfo = "0.30"

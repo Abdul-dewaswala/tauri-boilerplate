@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Disable body scroll - content scrolls only in main area */
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+h1 {
+  line-height: 0.5 !important;
+}
+
+/* Smooth scrolling in content area */
+main {
+  scroll-behavior: smooth;
+}
