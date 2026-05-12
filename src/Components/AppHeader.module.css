@@ -1,0 +1,54 @@
+/* Tauri drag region styles - CRITICAL for window dragging */
+
+/* Main header container - DRAGGABLE BY DEFAULT */
+.headerContainer {
+  /* Entire header is draggable */
+  -webkit-app-region: drag;
+
+  /* Prevent text selection during drag */
+  user-select: none;
+}
+
+/* Title section - inherits drag from parent */
+.titleSection {
+  /* Already draggable from parent, no need to repeat */
+  pointer-events: auto;
+}
+
+/* Logo - part of title, draggable (no pointer events = transparent to clicks) */
+.logo {
+  pointer-events: none;
+}
+
+/* App name/version text - draggable (no pointer events = transparent to clicks) */
+.appName {
+  pointer-events: none;
+}
+
+/* Search container - make it and its contents NON-DRAGGABLE */
+.searchContainer {
+  -webkit-app-region: no-drag;
+}
+
+/* Search button - MUST be no-drag for interaction */
+.searchButton {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+/* Window controls container - CRITICAL: must not be draggable */
+.controlsContainer {
+  -webkit-app-region: no-drag;
+}
+
+/* Individual control buttons - CRITICAL: no-drag */
+.controlButton {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* KBD element inside search - no-drag */
+.kbdShortcut {
+  -webkit-app-region: no-drag;
+}
